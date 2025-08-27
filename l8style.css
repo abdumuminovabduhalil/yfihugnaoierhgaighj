@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Noto: "Noto Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    font-size: 24px;
+    border-radius: 10px;
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--Noto);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+.box:hover {
+    font-size: 32px;
+    border-radius: 50px;
+    background-color: red;
+    width: 400px;
+    height: 400px;
+}
+
+.box:active {
+    background-color: brown;
+}
+
+.text:focus {
+    background-color: blue;
+}
+
+.child{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+}
+
+.child:nth-child(2) {
+    background-color: red;
+}
